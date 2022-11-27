@@ -1,0 +1,19 @@
+h1, p{
+    text-align: center;
+}
+li{
+    background-color: darkgray;
+}
+
+li:hover{
+    background-color: rgb(87, 85, 85);
+}
+
+li:active{
+    color: beige;
+    
+}
+
+li{
+    list-style: none;
+}

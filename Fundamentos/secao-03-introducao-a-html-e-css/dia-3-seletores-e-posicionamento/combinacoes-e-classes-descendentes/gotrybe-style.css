@@ -1,0 +1,59 @@
+.lista-ordenada{
+    background-color: yellow;
+}
+.par{
+    color:green;
+}
+
+.impar{
+   text-transform: uppercase; 
+}
+
+h1{
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+.headers{
+    color: red;
+}
+
+ol, li{
+    font-size: 20px;
+}
+
+.lista-ordenada em{
+  font-weight: bold;  
+}
+
+.item-list{
+    color: blue;
+}
+.java{
+    background-color: palevioletred;
+}
+
+.stack:hover{
+    color:rgb(184, 93, 14);
+    font-weight: bold;
+}
+
+.w3:hover{
+    color:rgb(3, 99, 3);
+    font-weight: bold;
+}
+
+.mdn:hover{
+    color:black;
+    font-weight: bold;
+}
+
+.dev:hover{
+    color: yellow;
+    font-weight: bold;
+}
+
+.trybe:hover{
+    color:rgb(2, 67, 2);
+    font-weight: bold;
+}
