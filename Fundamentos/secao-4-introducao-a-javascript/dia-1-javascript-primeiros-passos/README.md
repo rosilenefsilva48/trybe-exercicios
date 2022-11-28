@@ -1,6 +1,6 @@
 # Exercícios - agora, a prática
 
-> Nos exercícios de hoje, você vai elaborar alguns códigos de acordo com o que é pedido no enunciado. Todos trabalham a lógica condicional `(if/else e switch/case)`, operadores aritméticos `(+, -, *, /, %)` e operadores lógicos `(>, <, &&, ||)`. Para que consiga executar seus códigos, recomendamos que utilize a extensão `Code Runner`. Você pode ver mais sobre ela no conteúdo que fizemos sobre o uso do [VS Code](https://app.betrybe.com/learn/course/5e938f69-6e32-43b3-9685-c936530fd326/module/f04cdb21-382e-4588-8950-3b1a29afd2dd/section/fd34d5dd-9fea-4ff6-bc78-a84b89dda27b/lesson/659bc806-db35-4795-909a-737a069127e3).
+> Nos exercícios de hoje, você vai elaborar alguns códigos de acordo com o que é pedido no enunciado. Todos trabalham a lógica condicional `(if/else e switch/case)`, operadores aritméticos `(+, -, *, /, %)` e operadores lógicos `(>, <, &&, ||)`. Para que consiga executar seus códigos, recomendamos que utilize a extensão `Code Runner`. Você pode ver mais sobre ela no conteúdo que fizemos sobre o uso do VS Code.
 
 1. Elabore alguns códigos e imprima o resultado no console usando o `console.log`, um para cada operação aritmética básica. Seu código deve ter duas constantes, a e b, definidas no começo com os valores que serão operados. Escreva códigos para:
 
