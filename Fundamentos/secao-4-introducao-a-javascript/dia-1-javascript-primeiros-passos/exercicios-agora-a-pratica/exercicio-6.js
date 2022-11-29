@@ -1,8 +1,8 @@
 // Exercício (6)
 
-let chessPieces = "Peao"
+let chessPieces = "Bispo".toLowerCase()
 
-switch (chessPieces.toLowerCase) {
+switch (chessPieces) {
   case "peao":
     console.log("O peão se movimenta para frente em linha reta");
     break;
