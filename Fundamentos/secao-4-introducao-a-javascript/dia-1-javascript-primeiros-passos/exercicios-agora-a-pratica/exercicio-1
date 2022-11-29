@@ -8,28 +8,3 @@ console.log(`A subtração é: ${a - b}`);
 console.log(`A multiplicação é: ${a * b}`);
 console.log(`À Divisão é: ${a / b}`);
 console.log(`O resto da divisão é ${a % b}`);
-
-
-// Exercício (2)
-
-const numberOne = 5;
-const numberTwo = 6;
-
-if(numberOne > numberTwo){
-  console.log(numberOne);
-}else{
-  console.log(numberTwo);
-}
-
-// Exercício (3)
-
-const numberThree = 10;
-
-if(numberOne > numberTwo && numberOne > numberThree){
-  console.log(numberOne);
-}else if(numberTwo > numberOne && numberTwo > numberThree){
-  console.log(numberTwo);
-}else{
-  console.log(numberThree);
-}
-
