@@ -9,7 +9,6 @@ for (let index = 0; index < numbers.length; index += 1){
   if(numbers[index] % 2 !== 0){
    oddNumber += 1  
   }
-  
 }
 
 if(oddNumber === 0){
