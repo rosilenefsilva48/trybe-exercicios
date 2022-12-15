@@ -12,5 +12,3 @@ if(sum > 15){
   console.log('valor menor que 16');
 }
 }
-
-
