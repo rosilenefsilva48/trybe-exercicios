@@ -1,24 +1,35 @@
 // Exercício (6)
 
+/*
+Utilize switch/case para escrever um código que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
+Como desafio, escreva um código para funcionar tanto se receber o nome de uma peça com letras maiúsculas quanto com letras minúsculas, sem aumentar a quantidade de condicionais.
+
+Como dica, você pode pesquisar uma função que faz uma string ficar com todas as letras minúsculas (lower case).
+
+Se a peça passada for inválida, o código deve retornar uma mensagem de erro.
+
+Exemplo: bishop (bispo) -> diagonals (diagonais)
+*/
+
 let chessPieces = "Bispo".toLowerCase()
 
 switch (chessPieces) {
-  case "peao":
+  case "pawn":
     console.log("O peão se movimenta para frente em linha reta");
     break;
-  case "bispo":
+  case "bishop":
     console.log("O bispo se move em diagonal");
     break;
-  case "torre":
+  case "rook":
     console.log("A torre se move vertical e horizontalmente")
     break;
-  case "cavalo":
+  case "knight":
     console.log("O cavalo se move em L");
     break;
-  case "rainha":
+  case "queen":
     console.log("A rainha se move horizontal, vertical e diagonalmente");
     break;
-  case "rei":
+  case "king":
     console.log("O rei se move para qualquer direção apenas uma casa por vez");
     break
   default:
