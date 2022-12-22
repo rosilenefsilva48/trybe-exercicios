@@ -18,26 +18,43 @@ console.log(`"${newWord}"`);
 
 // 3- Considere o array de strings abaixo:
 
-let array = ['java', 'javascript', 'python', 'html', 'css'];
+//let array = ['java', 'javascript', 'python', 'html', 'css'];
 
 // Utilize a estrutura de repetição for para escrever dois algoritmos:
 // um que imprima no console a maior palavra desse array e outro que imprima a menor.
 // Considere o número de caracteres de cada palavra.
+let array = ['java', 'javascript', 'python', 'html', 'css'];
+let biggestWord = array[0];
+let shortestWord = array[0];
 
-let biggestWord = "";
-
-for(let index of array) {
-  if(index.length > biggestWord.length)
-  biggestWord = index
+for(let index = 0;index < array.length; index +=1) {
+  if(array[index].length > biggestWord.length)
+  biggestWord = array[index];
 }
 console.log(biggestWord);
 
-let shortestWord = "";
-for(let index = 0; index < array.length; index += 1){
-  if(index.length < shortestWord.length){
-    shortestWord = index
+for(let index = 0;index < array.length; index +=1){
+  if(array[index].length < shortestWord.length){
+    shortestWord = array[index];
   }
 }
 console.log(shortestWord);
 
 //escreva um algoritmo que imprima no console o maior número primo entre 2 e 50.
+
+let biggestPrimeNumber = 0;
+
+
+for(let index = 2; index <+ 50; index +=1){
+  let isPrime = true;
+  for(let secondIndex = 2; secondIndex < index; secondIndex +=1){
+    if(index % secondIndex === 0){
+      isPrime = false;
+    }
+  }
+  if(isPrime) {
+    biggestPrimeNumber = index
+  }
+}
+console.log(biggestPrimeNumber);
+
