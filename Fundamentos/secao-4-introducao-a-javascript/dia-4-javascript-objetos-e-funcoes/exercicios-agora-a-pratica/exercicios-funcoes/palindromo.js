@@ -16,5 +16,4 @@ function verificaPalindrome(str) {
   }
   return false;
 }
-
 console.log(verificaPalindrome('desenvolvimento'));
