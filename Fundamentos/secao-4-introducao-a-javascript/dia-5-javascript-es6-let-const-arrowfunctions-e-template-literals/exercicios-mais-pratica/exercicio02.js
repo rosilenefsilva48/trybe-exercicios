@@ -26,7 +26,7 @@ Retorno: Essa é a área do círculo: 78.5
 
 const circleArea = (radius) => {
   const PI = 3.14;
-  let area = PI * (radius ** 2 )
+  let area = PI * (radius ** 2)
   return `Essa é a área do círculo: ${area}`
 }
 console.log(circleArea(5));
