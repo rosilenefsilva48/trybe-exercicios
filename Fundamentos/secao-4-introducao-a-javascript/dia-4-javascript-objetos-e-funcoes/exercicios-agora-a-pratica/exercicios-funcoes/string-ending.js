@@ -10,3 +10,17 @@ Retorno esperado: true
 verificaFimPalavra('joaofernando', 'fernan');
 Retorno esperado: false
 */
+function checkStringEnding(str, strEnd) {
+  str = str.split('').reverse().join('');
+  strEnd = strEnd.split('').reverse().join('');
+  let control = true;
+
+  for(let index = 0; index < strEnd.length; index += 1) {
+    if(str[index] !== strEnd[index]) {
+      control = false;
+      break;
+    }
+  }
+  return control;
+}
+console.log(checkStringEnding('joaofernando', 'fernan'));
