@@ -1,8 +1,6 @@
 const header = document.getElementById("header-container");
-header.style.backgroundColor = 'rgb(0, 176, 105)';
+header.style.backgroundColor = 'green'
 
-const emergencyTasks = document.getElementsByClassName("emergency-tasks")[0];
-emergencyTasks.style.backgroundColor = 'rgb(255, 159, 132)';
+const section1 = document.getElementsByClassName(".emergency-tasks");
 
-document.getElementsByClassName(".emergency-tasks");
-style.backgroundColor = 'red'
+section1.style.backgroundColor = 'orange'
