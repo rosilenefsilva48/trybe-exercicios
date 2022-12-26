@@ -20,7 +20,7 @@ body{
 .matriz{
   background-color: aliceblue;
   /*height: 80%;*/
-  width: 420%;
+  width: 420px;
   margin: 0 auto;
   border: 3px solid black;
 }

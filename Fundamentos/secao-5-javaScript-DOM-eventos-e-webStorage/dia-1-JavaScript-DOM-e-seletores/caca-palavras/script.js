@@ -9,9 +9,9 @@ const generateCells = () => {
     for(let index1 = 0; index1 < 10; index1 +=1){
       const cell = document.createElement('div');
       cell.className = 'cell';
-      line.appendChild(cell)
+      line.appendChild(cell);
     }
-    matriz.appendChild(line)
+    matriz.appendChild(line);
   }
 }
 generateCells();
@@ -20,11 +20,11 @@ const addWords = () => {
   const lines = document.querySelectorAll('.line');
   const indexLine = Math.floor(Math.random() * lines.length);
   
-  const indexWord = Math.floor(Math.randon() * arrayWords.length);
+  const indexWord = Math.floor(Math.random() * arrayWords.length);
   const word = arrayWords[indexWord];
 
   const cells = lines[indexLine].querySelectorAll('.cell');
-  const indexCell = Math.floor(Math.randon() * (cells.length - word.length + 1));
+  const indexCell = Math.floor(Math.random() * (cells.length - word.length + 1));
   
   for(let index = 0; index < word.length; index += 1){
     cells[indexCell + index].innerText = word[index];
