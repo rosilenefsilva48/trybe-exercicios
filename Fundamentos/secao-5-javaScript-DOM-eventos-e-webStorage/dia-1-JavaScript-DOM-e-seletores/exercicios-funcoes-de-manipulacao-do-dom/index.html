@@ -38,6 +38,53 @@
         </section>
     </main>
     <script>
+
+        // Funções:
+
+        const changeText = () => {
+            const paragraph2 = document.querySelectorAll('.center-content p');
+            paragraph2[1].innerText = 'Espero estar atuando na área de tecnologia como desenvolvedora de software';
+        };
+
+        const changeColorMain = () => {
+            const main = document.querySelectorAll(".main-content");
+            main[0].style.backgroundColor = "rgb(76, 164, 109)";
+        }
+
+        const changeColorSection = () => {
+            const colorSection = document.querySelectorAll(".main-content .center-content");
+            colorSection[0].style.backgroundColor = "white";
+        };
+
+        const textCorrection = () => {
+            const h1 = document.getElementsByClassName('title');
+            h1[0].innerText = 'Desafio - JavaScript';
+        };
+
+        const changeFirstParagraph = () => {
+            const p1 = document.querySelectorAll('.center-content p');
+            p1[0].innerHTML = p1[0].innerHTML.toUpperCase();
+        };
+
+        const showParagraphsConsole = () => {
+            const paragraphs = document.getElementsByTagName('p')
+            for(let index = 0; index < paragraphs.length; index += 1) {
+                console.log(paragraphs[index].innerText);
+            }
+        }
+        
+        //Execuções:
+
+        changeText();
+        changeColorMain();
+        changeColorSection();
+        textCorrection();
+        changeFirstParagraph();
+        showParagraphsConsole();
+
+
+
+
     </script>
 </body>
 </html>
