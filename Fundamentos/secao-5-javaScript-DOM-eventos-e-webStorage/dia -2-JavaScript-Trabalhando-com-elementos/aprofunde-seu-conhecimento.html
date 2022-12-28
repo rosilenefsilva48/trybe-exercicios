@@ -58,8 +58,70 @@
   <body>
     <script>
       // COLOQUE SEU CÓDIGO AQUI
+      const bodyPage = document.getElementsByTagName("body")[0];
+      const title = document.createElement("h1");
+      title.innerText = "TrybeTrip - Agência de Viagens";
+      bodyPage.appendChild(title);
 
+      const main = document.createElement("main");
+      main.className = "main-content";
+      bodyPage.appendChild(main);
+
+      const centerSection = document.createElement("section");
+      centerSection.className = "center-content";
+      main.appendChild(centerSection);
+
+      const paragraph = document.createElement("p");
+      paragraph.innerText = "Venha viajar conosco!";
+      centerSection.appendChild(paragraph);
+    
+      const leftSection = document.createElement("section");
+      leftSection.className = "left-content";
+      main.appendChild(leftSection);
+
+      const rightSection = document.createElement("section");
+      rightSection.className = "right-content";
+      main.appendChild(rightSection);
+
+      const smallImage = document.createElement("img");
+      smallImage.src = "https://picsum.photos/200";
+      smallImage.className = "small-image";
+      leftSection.appendChild(smallImage);
+
+      const numbers = ["um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"];
+
+      const list = document.createElement("ul");
       
+      for(let index = 0; index < numbers.length; index += 1){
+        const listItem = numbers[index];
+        const listItemLi = document.createElement("li");
+        listItemLi.innerText = numbers[index];
+        list.appendChild(listItemLi);
+      }
+      rightSection.appendChild(list);
+
+      for(let index = 1; index <= 3; index += 1) {
+        const h3 = document.createElement("h3");
+        main.appendChild(h3);
+      };
+
+      title.className = "title";
+
+      for(let index = 0; index <= 2; index += 1) {
+        const h3 = document.getElementsByTagName("h3")[index];
+        h3.className = "description";
+      };
+
+      main.removeChild(leftSection);
+
+      rightSection.style.marginRight = "auto";
+
+      main.style.backgroundColor = "green";
+
+
+
+
+
 
     </script>
   </body>
