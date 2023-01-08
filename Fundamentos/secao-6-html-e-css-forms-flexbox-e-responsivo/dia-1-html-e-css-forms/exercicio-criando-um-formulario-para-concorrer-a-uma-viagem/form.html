@@ -13,31 +13,34 @@
   <form action="" method="GET">
     <fieldset>
       <label for="input-name">Nome
-        <input type="text" name="" id="input-name" placeholder="Digite seu nome" min=10 max=40>
+        <input type="text" name="input-name" id="input-name" placeholder="Digite seu nome" minlength=10 maxlength=40 required>
       </label>
       <br><br>
       <label for="input-email">E-mail
-        <input type="email" name="" id="input-email" placeholder="Digite seu e-mail" min=10 max=50>
+        <input type="email" name="email" id="input-email" placeholder="Digite seu e-mail" minlength=10 maxlength=50 required>
       </label>
-      <br><br>
-      <label for="destino1">Destino preferido <br>
-        <input type="radio" id="destino1" name="destino" value="cidade">Veneza
+      <br>
+      <p>Destino Preferido</p>
+      <label for="destino1">
+        <input type="radio" id="destino1" name="destino" value="cidade" required>Veneza
       </label>
       <label for="destino2">
-        <input type="radio" id="destino2" name="destino" value="campo">Pantanal
+        <input type="radio" id="destino2" name="destino" value="campo" required>Pantanal
       </label>
       <label for="destino3">
-        <input type="radio" id="destino3" name="destino" value="praia">Arraial do Cabo
+        <input type="radio" id="destino3" name="destino" value="praia" required>Arraial do Cabo
       </label>
       <label for="destino4">
-        <input type="radio" id="destino4" name="destino" value="montanhas">Everest
+        <input type="radio" id="destino4" name="destino" value="montanhas" required>Everest
       </label>
-      <p>Porque você deveria ser a pessoa desenvolvedora a ganhar o concurso Trybe Trip?</p>
-      <textarea name="motivos" id="text-area" maxlength="500" cols="30" rows="10"></textarea>
+      <br><br>
+      <label for="text-area">Porque você deveria ser a pessoa desenvolvedora a ganhar o concurso Trybe Trip?</label>
+      <br><br>
+      <textarea name="text-area" id="text-area" maxlength="500" cols="30" rows="10"></textarea>      
       <br>
       <p>Qual a melhor data para realizar sua viagem?</p>
-      <label for="">Data:
-        <input type="date">
+      <label for="date">Data:
+        <input type="date" id="date">
       </label>
       <p>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</p>
       <label for="sim">Sim, eu adoraria!
@@ -49,13 +52,14 @@
       </label>
       <br><br>
       <label for="divulgacao">
-        <input type="checkbox" name="" id="divulgacao">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.       
+        <input type="checkbox" name="" id="divulgacao" required>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.       
       </label>     
     </fieldset>
     <br>
     <button type="submit" id="enviar">Enviar</button>
     <button type="reset" id="apagar">Apagar</button>
   </form>
+ 
   <script src="script.js"></script>
 </body>
 </html>
