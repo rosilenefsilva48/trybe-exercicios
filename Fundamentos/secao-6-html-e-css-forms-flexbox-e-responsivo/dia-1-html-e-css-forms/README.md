@@ -1,0 +1,1 @@
+# Aqui temos todos os execícios propostos pela TRYBE 
