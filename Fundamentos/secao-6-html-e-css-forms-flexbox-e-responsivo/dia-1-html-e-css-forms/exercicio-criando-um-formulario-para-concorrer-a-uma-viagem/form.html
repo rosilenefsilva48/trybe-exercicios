@@ -10,6 +10,52 @@
   <header id="cabecalho">
     <h1 id="title">Concorra a uma viagem maravilhosa!!</h1>
   </header>
+  <form action="" method="GET">
+    <fieldset>
+      <label for="input-name">Nome
+        <input type="text" name="" id="input-name" placeholder="Digite seu nome" min=10 max=40>
+      </label>
+      <br><br>
+      <label for="input-email">E-mail
+        <input type="email" name="" id="input-email" placeholder="Digite seu e-mail" min=10 max=50>
+      </label>
+      <br><br>
+      <label for="destino1">Destino preferido <br>
+        <input type="radio" id="destino1" name="destino" value="cidade">Veneza
+      </label>
+      <label for="destino2">
+        <input type="radio" id="destino2" name="destino" value="campo">Pantanal
+      </label>
+      <label for="destino3">
+        <input type="radio" id="destino3" name="destino" value="praia">Arraial do Cabo
+      </label>
+      <label for="destino4">
+        <input type="radio" id="destino4" name="destino" value="montanhas">Everest
+      </label>
+      <p>Porque você deveria ser a pessoa desenvolvedora a ganhar o concurso Trybe Trip?</p>
+      <textarea name="motivos" id="text-area" maxlength="500" cols="30" rows="10"></textarea>
+      <br>
+      <p>Qual a melhor data para realizar sua viagem?</p>
+      <label for="">Data:
+        <input type="date">
+      </label>
+      <p>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</p>
+      <label for="sim">Sim, eu adoraria!
+        <input type="radio" name="oportunidades" id="sim">
+      </label>
+      <br>
+      <label for="nao">Não, Obrigada(o)!
+        <input type="radio" name="oportunidades" id="nao">
+      </label>
+      <br><br>
+      <label for="divulgacao">
+        <input type="checkbox" name="" id="divulgacao">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.       
+      </label>     
+    </fieldset>
+    <br>
+    <button id="enviar">Enviar</button>
+    <button id="apagar">Apagar</button>
+  </form>
     
 </body>
 </html>
