@@ -13,11 +13,11 @@
   <form action="" method="GET">
     <fieldset>
       <label for="input-name">Nome
-        <input type="text" name="input-name" id="input-name" placeholder="Digite seu nome" minlength=10 maxlength=40 required>
+        <input type="text" name="input-name" id="input-name" placeholder="Digite seu nome" minlength="10" maxlength="40" required>
       </label>
       <br><br>
       <label for="input-email">E-mail
-        <input type="email" name="email" id="input-email" placeholder="Digite seu e-mail" minlength=10 maxlength=50 required>
+        <input type="email" name="email" id="input-email" placeholder="Digite seu e-mail" minlength="10" maxlength="50" required>
       </label>
       <br>
       <p>Destino Preferido</p>
@@ -56,8 +56,8 @@
       </label>     
     </fieldset>
     <br>
-    <button type="submit" id="enviar">Enviar</button>
-    <button type="reset" id="apagar">Apagar</button>
+    <button type="submit" id="enviar" disabled>Enviar</button>
+    <button type="button" id="reset">Apagar</button>
   </form>
  
   <script src="script.js"></script>
