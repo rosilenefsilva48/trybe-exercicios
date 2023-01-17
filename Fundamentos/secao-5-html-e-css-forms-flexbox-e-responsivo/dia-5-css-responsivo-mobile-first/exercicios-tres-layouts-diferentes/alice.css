@@ -1,3 +1,64 @@
+/* Dispositivos pequenos (smartphone) */
+@media (max-width: 450px) {
+  body {
+    margin: 30px;
+    font-size: 1.3em;
+  }
+
+  h1 {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  header {
+    display: flex;
+    padding: auto;
+    font-size: 0.8em;
+    flex-direction: column;
+  }
+
+  header p {
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  nav ul li {
+    list-style: none;
+    font-weight: 600;
+  }
+  .aside-one ol {
+    font-size: 0.8em;
+    list-style: upper-roman;
+    width: 300px;
+  }
+}
+
+.aside-two ul {
+  font-size: 0.8em;
+}
+
+h2 {
+  font-size: 1em;;
+}
+
+footer {
+  font-size: 0.7em;
+}
+
+footer h3 {
+  text-align: center;
+}
+article p {
+  text-align: justify;
+}
+
 html {
   box-sizing: border-box;
 }
