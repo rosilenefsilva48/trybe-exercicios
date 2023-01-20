@@ -1,4 +1,4 @@
-const myRemove = require('./exercicio-1')
+const myRemove = require('./exercicio-1');
 
 describe('exercicio 1', () => {
   

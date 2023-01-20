@@ -1,4 +1,4 @@
-const myFizzBuzz = require('./exercicio-2')
+const myFizzBuzz = require('./exercicio-2');
 
 describe('Exercício 2', () => {
   
