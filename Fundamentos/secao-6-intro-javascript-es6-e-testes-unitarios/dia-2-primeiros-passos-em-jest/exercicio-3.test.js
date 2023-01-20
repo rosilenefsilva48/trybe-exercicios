@@ -1,63 +1,64 @@
 const {encode, decode} = require('./exercicio-3');
 
-describe('Exercício 3', () => {
-  // Teste se encode e decode são funções;
-  test('Testa se encode é uma função', () => {
-    expect(typeof encode).toEqual('function');
-  });
+/* Para as funções encode e decode, crie os seguintes testes em Jest:
+1. Teste se encode e decode são funções;
+2. Para a função encode, teste se as vogais a, e, i, o, u são convertidas em 1, 2, 3, 4 e 5, respectivamente;
+3. Para a função decode, teste se os números 1, 2, 3, 4 e 5 são convertidos nas vogais a, e, i, o, u, respectivamente;
+4. Teste se as demais letras/números não são convertidos para cada caso;
+5. Teste se a string que é retornada pelas funções tem o mesmo número de caracteres que a string passada como parâmetro. */
 
-  test('Testa se decode é uma função', () => {
+describe('Testes para ambas as funções', () => {
+  test('Testa se encode e decode são funções', () => {
+    expect(typeof encode).toEqual('function');
     expect(decode).toBeDefined();
   });
 
-  // Para a função encode, teste se as vogais a, e, i, o, u são convertidas em 1, 2, 3, 4 e 5, respectivamente
-  test('Testa se a vogal "a" se converte no número 1', () => {
-    expect(encode('ama')).toEqual('1m1');
+  test('Testa se encode e decode retornam o mesmo número de caracteres que a string passada por parâmetro', () => {
+    expect(encode('chupeta').length).toEqual(7);
+    expect(decode('4v4').length).toEqual(3);
+  });
+});
+
+describe('Testes para a função encode', () => {
+  test('Para a função encode, testa se a vogal "a" é convertida em 1', () => {
+    expect(encode('abacaxi')).toEqual('1b1c1x3');
   });
 
-  test('Testa se a vogal "e" se converte no número 2', () => {
-    expect(encode('este')).toEqual('2st2');
-  });
-// Teste se as demais letras/números não são convertidos para cada caso;
-  test('Testa se a vogal "i" se converte no número 3', () => {
-    expect(encode('imita')).toEqual('3m3t1');
+  test('Para a função encode, testa se a vogal "e" é convertida em 2', () => {
+    expect(encode('elefante')).toEqual('2l2f1nt2');
   });
 
-  test('Testa se a vogal "o" se converte no número 4', () => {
-    expect(encode('olho')).toEqual('4lh4');
+  test('Para a função encode, testa se a vogal "i" é convertida em 3', () => {
+    expect(encode('infantil')).toEqual('3nf1nt3l');
   });
 
-  test('Testa se a vogal "u" se converte no número 5', () => {
+  test('Para a função encode, testa se a vogal "o" é convertida em 4', () => {
+    expect(encode('ovo')).toEqual('4v4');
+  });
+
+  test('Para a função encode, testa se a vogal "u" é convertida em 5', () => {
     expect(encode('urubu')).toEqual('5r5b5');
   });
+});
 
-  // Para a função decode, teste se os números 1, 2, 3, 4 e 5 são convertidos nas vogais a, e, i, o, u, respectivamente;
-  test('Testa se o numero "1" se converte na vogal a', () => {
-    expect(decode('1m1')).toEqual('ama');
+describe('Testes para a função decode', () => {
+  test('Para a função decode, testa se o número "1" é convertido na vogal "a"', () => {
+    expect(decode('1b1c1x3')).toEqual('abacaxi');
   });
 
-  test('Testa se o numero "2" se converte na vogal e', () => {
-    expect(decode('2st2')).toEqual('este');
+  test('Para a função decode, testa se o número "2" é convertido na vogal "e"', () => {
+    expect(decode('2l2f1nt2')).toEqual('elefante');
   });
 
-  test('Testa se o numero "3" se converte na vogal i', () => {
-    expect(decode('3m3t1')).toEqual('imita');
+  test('Para a função decode, testa se o número "3" é convertido na vogal "i"', () => {
+    expect(decode('3nf1nt3l')).toEqual('infantil');
   });
 
-  test('Testa se o numero "4" se converte na vogal o', () => {
-    expect(decode('4lh4')).toEqual('olho');
+  test('Para a função decode, testa se o número "4" é convertido na vogal "o"', () => {
+    expect(decode('4v4')).toEqual('ovo');
   });
 
-  test('Testa se o numero "5" se converte na vogal u', () => {
+  test('Para a função decode, testa se o número "5" é convertido na vogal "u"', () => {
     expect(decode('5r5b5')).toEqual('urubu');
-  });
-
-  // Teste se a string que é retornada pelas funções tem o mesmo número de caracteres que a string passada como parâmetro.
-  test('Testa se o número de caracteres do retorno da função é o mesmo número de caracteres passado como parâmetro', () => {
-    expect(encode('amigo').length).toEqual(5);
-  });
-
-  test('Testa se o número de caracteres do retorno da função é o mesmo número de caracteres passado como parâmetro', () => {
-    expect(decode('amores').length).toEqual(6);
   });
 });
