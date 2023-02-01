@@ -66,3 +66,26 @@ const books = [
 
 Cada objeto deve conter uma propriedade author, com o nome da pessoa autora do livro, e uma propriedade age, com a idade dessa pessoa quando o livro foi lançado. O array deve ser ordenado por idade, ou seja, da pessoa mais jovem para a mais velha. */
 
+/* retorno esperado:
+
+[
+  {
+    author: 'José',
+    age: 58,
+  }
+  {
+  author: 'Maria',
+  age: 60,
+  }
+]
+ */
+
+const authorArray = books.map((book) => {
+  const obj = {
+    author: book.author.name,
+    age: (book.releaseYear - book.author.birthYear),
+  }
+  return obj;
+}).sort((a, b) => a.age - b.age);
+
+console.log(authorArray);
