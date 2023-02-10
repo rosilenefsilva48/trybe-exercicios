@@ -4,6 +4,7 @@
   "description": "",
   "main": "main.js",
   "dependencies": {
+    "@trybe/eslint-config-frontend": "^1.8.3",
     "esbuild": "^0.16.17",
     "function-bind": "^1.1.1",
     "has": "^1.0.3",
@@ -21,7 +22,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vite"
+    "dev": "vite",
+    "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js"
   },
   "keywords": [],
   "author": "",
