@@ -1,27 +1,33 @@
-<!DOCTYPE html>
-<html lang="pt-Br">
+!DOCTYPE html>
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Casa de Câmbio</title>
 </head>
+
 <body>
-  <header>
-    <h1>Casa de Câmbio</h1>    
-  </header>
-  <main>
-    <div>
-      <label>Digite a moeda desejada:
-        <input type="text" placeholder="USD" id="input">
-      </label>     
-      <button id="btnSearch">Pesquisar</button>
-    </div>
-    <div id="container">
-      <h2 class="currency-title"></h2>
-      <ul id="list"></ul>
-    </div>
+
+  <h1>Casa de <span class="green">Câmbio</span></h1>
+
+  <form>
+    <label for="coin-input">
+      Digite a moeda:
+      <input type="text" placeholder="USD" id="coin-input" />
+    </label>
+    <button class="search-btn" type="button">Pesquisar</button>
+  </form>
+
+  <main class="main">
+    <section>
+      <h2 class="coins-title"></h2>
+      <ul class="coins"></ul>
+    </section>
   </main>
-  <script type="module" src="main.js"></script>
+
+  <script type="module" src="./src/main.js" defer></script>
 </body>
+
 </html>
