@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import SelectInput from './SelectInput';
+import AnecdoteInput from './AnecdoteInput';
+import NameInput from './NameInput';
 
 class Form extends Component {
   constructor() {
@@ -11,9 +13,28 @@ class Form extends Component {
       age: '',
       anecdote: '',
       terms: false,
+      formularioComErros: true,
     }
 
     this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleError() {
+    const { name, email, age, anecdote, terms } = this.state;
+    
+    const errorCases = [
+      !name.length,
+      !email.match(/^\S+@\S+$/i),
+      !age.length,
+      !anecdote.length,
+      !terms,
+    ];
+
+    const formularioPreechido = errorCases.every((error) => error !== true);
+
+    this.setState({
+      formularioComErros: !formularioPreechido,
+    });
   }
 
   handleChange({ target }) {
@@ -21,11 +42,11 @@ class Form extends Component {
     const value = (target.type === 'checkbox') ? target.checked : target.value;
     this.setState({
       [name]: value,
-    });
+    }, this.handleError);
   }
 
   render() {
-    const { name, email, age, anecdote, terms } = this.state;
+    const { name, email, age, anecdote, terms, formularioComErros } = this.state;
 
     return (
       <div>
@@ -34,16 +55,7 @@ class Form extends Component {
           <fieldset>
             <legend>Informações pessoais</legend>
             
-            <label htmlFor="name">
-              Nome:
-              <input
-                id="name"
-                name="name"
-                type="text"
-                onChange={ this.handleChange }
-                value={ name }
-              />            
-            </label>
+            <NameInput name={ name } handleChange={ this.handleChange } />
 
             <label htmlFor="email">
               Email:
@@ -64,15 +76,8 @@ class Form extends Component {
           
           <fieldset>
             <legend>Textos e arquivos</legend>
-            <label htmlFor="anecdote">
-              Anedota:
-              <textarea
-                id="anecdote"
-                name="anecdote"
-                onChange={ this.handleChange }
-                value={ anecdote }
-              />
-            </label>
+            
+            <AnecdoteInput anecdote={ anecdote } handleChange={ this.handleChange } />
 
             <input type="file" />
 
@@ -89,6 +94,9 @@ class Form extends Component {
             Concordo com os termos e acordos
           </label>          
         </form>
+        { formularioComErros
+          ? <span style={ {color: 'red'} }>Preencha todos os campos</span>
+          : <span style={ {color: 'green' } }>Todos campos forampreenchidos</span> }
       </div>
     );
   }
