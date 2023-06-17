@@ -1,0 +1,17 @@
+[
+  {
+    "id": 2,
+    "movie": "Velozes e Furiosos",
+    "price": 12
+  },
+  {
+    "id": 3,
+    "movie": "Pulp Fiction",
+    "price": 18
+  },
+  {
+    "id": 4,
+    "movie": "Titanic",
+    "price": 20
+  }
+]
